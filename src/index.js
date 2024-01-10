@@ -1,5 +1,6 @@
 import express from 'express'
 const app = express()
+const port = process.env.PORT || 3000
 
 app.use(express.static('public'))
 app.set('view engine', 'ejs');
@@ -17,6 +18,6 @@ app.get("/editor/:id", (req, res) => {
     // res.render("", )
 })
 
-app.listen(3000, () => {
-    console.log('Server is running at 3000')
+app.listen(port, () => {
+    console.log('Server is running at', port)
 })
