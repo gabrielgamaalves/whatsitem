@@ -1,0 +1,6 @@
+node_modules
+__tests__
+DB
+
+.wwebjs_auth
+.wwebjs_cache

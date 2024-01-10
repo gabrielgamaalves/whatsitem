@@ -1,0 +1,81 @@
+{
+  "chamadas": {
+    "initial": {
+      "messages": [
+        "Boa tarde",
+        "Oi"
+      ],
+      "reply": "Olá Como podemos lhe ajudar? (digite):\n  1) Menu\n  2) Encerrar de inicio"
+    },
+    "exit": {
+      "messages": [
+        "Encerrar conversa"
+      ],
+      "reply": "Ok! Encerrando o antendimento. Qualquer dúvida pode chamar!"
+    },
+    "doubt": {
+      "reply": "Desculpe, esta resposta não foi encontrada, deseja tentar novamente?\n Caso deseja fechar a conversa mande *\"encerrar conversa\"*"
+    }
+  },
+  "messages": [
+    {
+      "question": "1",
+      "id": "8a1b5",
+      "reply": {
+        "message": "Aqui está o cardapio.\n 1) para comida \n 2) para suco",
+        "options": [
+          {
+            "question": "1",
+            "reply": {
+              "message": "Qual comida? \n rubacão",
+              "options": [
+                {
+                  "question": "rubacão",
+                  "reply": {
+                    "message": "Certo vamos entregar o rubacão",
+                    "options": []
+                  },
+                  "id": "8a1b5:0:0"
+                }
+              ]
+            },
+            "id": "8a1b5:0"
+          },
+          {
+            "question": "2",
+            "reply": {
+              "message": "Certo vamos entregar o suco",
+              "options": []
+            },
+            "id": "8a1b5:1"
+          }
+        ]
+      }
+    },
+    {
+      "question": "2",
+      "id": "ah91n",
+      "reply": {
+        "message": "Ok, fechar pedido! Deseja receber promos?",
+        "options": [
+          {
+            "question": "Sim",
+            "reply": {
+              "message": "Otimos, iremos mandar promoções!",
+              "options": []
+            },
+            "id": "ah91n:0"
+          },
+          {
+            "question": "Não",
+            "reply": {
+              "message": "Ok! fechando conversa!",
+              "options": []
+            },
+            "id": "ah91n:1"
+          }
+        ]
+      }
+    }
+  ]
+}

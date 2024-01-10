@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <h2>Menssagens de chamada</h2>
+            <p>Adicione palavras que chamam o bot.</p>
+            <div class="container__chamadas mtop">
+                <div class="container__chamadas-items" id="chamadasItems">
+                    <div>
+                        <input type="text" placeholder="chamada" value="Boa Dia!">
+                    </div>
+                </div>
+                <button id="addChamadas">
+                    <i class="bi bi-plus-circle"></i>
+                </button>
+            </div>
+
+            <hr>
+            <h2>Menssagem de interação</h2>
+            <p>Menssagem enviada após a chamada do bot.</p>
+            <div class="container__poschamada mtop">
+                <input type="text" placeholder="" value="Boa tarde" style="width: 100%;">
+            </div>
+
+            <hr>
+            <h2>Menssagens</h2>
+            <p>Perguntas e sequências</p>
+            <div class="container__chat mtop">
+                <div class="container__chat-item">
+                    <div class="item-input">
+                        <div>
+                            <input type="text" placeholder="Pergunta">
+                            <span></span>
+                            <p><i class="bi bi-diagram-3"></i>editar sequencia</p>
+                        </div>
+                        <a href=""><i class="bi bi-trash3-fill" title="Deletar toda a resposta"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="/js/sweep.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

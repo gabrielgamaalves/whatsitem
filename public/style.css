@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    flex-direction: column;
+    cursor: auto;
+}
+
+form {
+    width: 60%;
+}
+
+form input[type="text"] {
+    border-radius: 0.375rem;
+    padding: 0px 10px;
+    font-size: 14px;
+    height: 36px;
+    outline: none;
+    /* background-color: rgb(229 231 235 / var(--tw-bg-opacity)); */
+    border: 1px solid rgb(189, 188, 188);
+}
+
+
+.container {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.container hr {
+    height: 1px;
+    border-top: 1px solid #d6d5d5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.container h2 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.container p {
+    line-height: 2em;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(70, 70, 70)
+}
+
+.container button {
+    background-color: #efefef;
+    transition: 0.3s;
+}
+
+.container button:hover {
+    background-color: #dbdada;
+}
+
+.mtop {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.container__chamadas {
+    margin-top: 20px;
+}
+
+.container__chamadas-items div {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.container__chamadas-items div::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
+
+.container__chamadas-items div::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 40px;
+    margin-left: 10px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #cecdcd;
+}
+
+.container__chamadas-items div input {
+    margin-left: 30px;
+}
+.container__chamadas-items div span {
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: #9c9c9c44;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container__chamadas-items div span:hover{
+    background-color: #9c9c9c86;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.075);
+}
+
+.container__chamadas-items div span i{
+    color: white;
+}
+
+.container__chamadas button {
+    margin-top: 30px;
+    width: 100px;
+    border-radius: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.container__chamadas button i {
+    font-size: 15px;
+}
+
+.container__chat {
+    border: 1px solid #cecdcd;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 30px;
+
+    margin-bottom: 30px;
+}
+
+.container__chat-item {
+    /* margin-top: 5px;s */
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.container__chat-item .item-input {
+    border: 1px solid #cecdcd;
+    border-radius: 10px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container__chat-item i {
+    border-radius: 10px;
+}
+
+.container__chat-item .item-input i {
+    margin: 0px 10px;
+    font-size: 15px;
+    color: #9c9c9c;
+}
+
+.container__chat-item .item-input div{
+    display: flex;
+    align-items: center;
+}
+
+.container__chat-item .item-input div span {
+    margin: 0 20px;
+    width: 1px;
+    background-color: #cecdcd;
+    height: 30px;
+}
+
+.container__chat-item .item-input div p{
+    transition: 0.3s;
+    padding-right: 10px;
+}
+
+.container__chat-item .item-input div p:hover{
+    cursor: pointer;
+    background-color: #cecdcd3f;
+    border-radius: 6px;
+}
+
+.container__chat-item .item-input a{
+    padding: 10px;
+}
+.container__chat-item .item-input a i {
+    margin: 0 5px;
+    padding: 10px 10px;
+    color: rgb(233, 113, 113);
+}
+
+.container__chat-item .item-input__task .bi-arrow-return-left {
+    color: blueviolet;
+}
